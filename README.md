@@ -23,7 +23,9 @@ These files make your linux experience memorable.
     git clone -b master git@github.com:HrishikeshMRao/.dotfiles.git
     ```
 - make sure to create the symbolic links manually (not recommended)
-  or
+
+  ### or
+  
 - download stow using your favourite package manager
 
   ### Ubuntu
