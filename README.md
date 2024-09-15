@@ -14,7 +14,7 @@ These files make your linux experience memorable.
   - using https :
     ```bash
     cd
-    git clone -b master https://github.com/HrishikeshMRao/.dotfiles
+    git clone -b master https://github.com/HrishikeshMRao/.dotfiles.git
     ```
      
   ### or
