@@ -17,7 +17,7 @@ These files make your linux experience memorable.
     git clone -b master https://github.com/HrishikeshMRao/.dotfiles
     ```
      
-  ###or
+  ### or
     
   - using ssh :
     ```bash
