@@ -11,29 +11,22 @@ These files make your linux experience memorable.
 ## Steps to replicate installation : 
 
 - clone this repository into your home folder
-
-  ```bash
-  cd
-  ```
   - using https :
     ```bash
+    cd
     git clone -b master https://github.com/HrishikeshMRao/.dotfiles
-    ```
-  
-  or
-  
+    ```  
+  or  
   - using ssh :
     ```bash
+    cd
     git clone -b master git@github.com:HrishikeshMRao/.dotfiles.git
     ```
 - make sure to create the symbolic links manually (not recommended)
-
   or
-
 - download stow using your favourite package manager
 
   ### Ubuntu
-
   - non root user:
   ```bash
   sudo apt install stow
@@ -43,14 +36,13 @@ These files make your linux experience memorable.
   apt install stow
   ```
 - run this command below and your are good to go:
-  
   ```bash
   stow .
   ```
   This is stow magic
 
 - reboot your system to make a fresh start to your exiting journey with linux ricing:
-- 
+  
   - non root user:
   ```bash
   sudo reboot
