@@ -47,9 +47,6 @@ esac
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
 
-# enable color support of ls and also add handy aliases
-export LS_COLORS='di=38;5;122:ow=38;5;122:tw=38;5;122:fi=38;5;210:ln=38;5;210:pi=38;5;210:so=38;5;210:bd=38;5;210:cd=38;5;210:or=38;5;210:mi=38;5;210:ex=38;5;74:*.zip=4;223:*.txt=38;5;223'
-
 alias ls='ls --color=auto'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
@@ -97,9 +94,9 @@ bind '"\C-k": history-search-forward'
 bind "set menu-complete-display-prefix on"
 
 # colored GCC warnings and errors
+export LS_COLORS='di=38;5;122:ow=38;5;122:tw=38;5;122:fi=38;5;210:ln=38;5;210:pi=38;5;210:so=38;5;210:bd=38;5;210:cd=38;5;210:or=38;5;210:mi=38;5;210:ex=38;5;74:*.zip=4;223:*.txt=38;5;223'
 export GCC_COLORS='error= 38;5;211:warning=38;5;223:note=38;5;159:caret=38;5;183:locus=38;5;183:quote=38;5;183'
 export PS1="\n\[\033[38;5;175m\]\u \[\033[38;5;180m\]\w\n\[\033[38;5;74m\]\$(echo \h | cut -d'-' -f1,2) \\[\033[38;5;183m\]\$ \[\033[38;5;252m\]"
-
 source /opt/ros/humble/setup.bash
 source ~/Navigation_Bot/dev_ws/install/setup.bash
 source ~/voice_grab/ros2_ws/install/setup.bash

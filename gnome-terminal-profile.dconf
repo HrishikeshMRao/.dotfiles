@@ -1,0 +1,31 @@
+[/]
+default='89cf21cf-21c9-438c-89ff-26ab3e6a3241'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '89cf21cf-21c9-438c-89ff-26ab3e6a3241']
+
+[:89cf21cf-21c9-438c-89ff-26ab3e6a3241]
+audible-bell=false
+background-color='rgb(28,28,28)'
+background-transparency-percent=0
+bold-color='rgb(246,193,119)'
+bold-color-same-as-fg=false
+bold-is-bright=true
+cursor-background-color='rgb(235,111,146)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(234,154,151)'
+cursor-shape='ibeam'
+default-size-columns=16
+font='FiraMono Nerd Font Mono 12'
+foreground-color='rgb(224,222,244)'
+highlight-background-color='rgb(42,40,62)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(86,82,110)'
+palette=['rgb(0,0,0)', 'rgb(205,0,0)', 'rgb(0,205,0)', 'rgb(205,205,0)', 'rgb(0,0,238)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(92,92,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+scrollbar-policy='always'
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=false
+visible-name='Default'
+
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+use-system-font=false

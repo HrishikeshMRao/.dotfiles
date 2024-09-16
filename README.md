@@ -8,7 +8,7 @@ These files make your linux experience memorable.
 - you should have git installed on your machine
 - please download the required software manually untill further commmit that addresses auto download.
 
-## Steps to replicate installation : 
+## Steps to replicate installation :
 
 - clone this repository into your home folder
   - using https :
@@ -16,9 +16,9 @@ These files make your linux experience memorable.
     cd
     git clone -b master https://github.com/HrishikeshMRao/.dotfiles.git
     ```
-     
+
   ### or
-    
+
   - using ssh :
     ```bash
     cd
@@ -27,7 +27,7 @@ These files make your linux experience memorable.
 - Make sure to create the symbolic links manually (not recommended).
 
   ### or
-  
+
   Download stow using your favourite package manager:
 
     ### Ubuntu
@@ -45,8 +45,13 @@ These files make your linux experience memorable.
     ```
     This is stow magic.
 
+- If you want to install my gnome-terminal profiles (recommended) run :
+    ```bash
+    dconf load /org/gnome/terminal/legacy/profiles:/ < ~/.dotfiles/gnome-terminal-profile.dconf
+    ```
+
 - reboot your system to make a fresh start to your exiting journey with linux ricing:
-  
+
     - non root user:
     ```bash
     sudo reboot
@@ -55,4 +60,4 @@ These files make your linux experience memorable.
     ```bash
     reboot
     ```
-  
+
