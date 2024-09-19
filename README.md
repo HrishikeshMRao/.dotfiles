@@ -8,6 +8,29 @@ These files make your linux experience memorable.
 - you should have git installed on your machine
 - please download the required software manually untill further commmit that addresses auto download.
 
+## Initial personel configurations
+
+- execute the below block to launch mpd and setup software level keymaps (personel).
+  ```bash
+  cat << 'EOF' >> ~/.profile
+  #!/bin/bash
+  # execute keybinding if the display env variable is set
+  
+  if [ "$DISPLAY" ] ; then
+     mpd &
+     setxkbmap -option ctrl:nocaps
+     xcape -e 'Control_L=Escape' -t 175
+     xmodmap -e "keycode 64 = BackSpace"   # Remap Left Alt (Alt_L) to Backspace
+     xmodmap -e "keycode 108 = Return"     # Remap Right Alt (Alt_R) to Enter
+  fi
+  EOF
+  ```
+  
+- installed the required packages for the dotfiles to act on (non root user):
+  ```bash
+  sudo apt install nvim mpd i3-wm tmux picom rofi ncmpcpp 
+  ```
+
 ## Steps to replicate installation :
 
 - clone this repository into your home folder
@@ -41,6 +64,7 @@ These files make your linux experience memorable.
     ```
 - run this command below and your are good to go:
     ```bash
+    cd ~/.dotfiles
     stow .
     ```
     This is stow magic.
