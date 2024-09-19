@@ -28,3 +28,8 @@ Sep 19 19:45 : player: played "Juvenile - 400 Degreez (Deluxe) (2024) Album 320_
 Sep 19 19:45 : exception: Not playing
 Sep 19 19:49 : player: played "Eminem - The Death of Slim Shady (Coup De Grâce)_ Expanded Mourner’s Edition (2024) Mp3 320kbps [PMEDIA] ⭐️/11. Houdini.mp3"
 Sep 19 20:21 : mixer: Failed to read mixer for 'ALSA audio': no such mixer control: PCM
+Sep 19 21:46 : output: Failed to open mixer for 'ALSA audio': no such mixer control: PCM
+Sep 19 21:51 : player: played "Eminem - The Death of Slim Shady (Coup De Grâce)_ Expanded Mourner’s Edition (2024) Mp3 320kbps [PMEDIA] ⭐️/15. Temporary.mp3"
+Sep 19 21:58 : output: Failed to open mixer for 'ALSA audio': no such mixer control: PCM
+Sep 19 22:00 : player: played "Eminem - The Death of Slim Shady (Coup De Grâce)_ Expanded Mourner’s Edition (2024) Mp3 320kbps [PMEDIA] ⭐️/01. Renaissance.mp3"
+Sep 19 22:01 : player: played "Eminem - The Death of Slim Shady (Coup De Grâce)_ Expanded Mourner’s Edition (2024) Mp3 320kbps [PMEDIA] ⭐️/03. Trouble.mp3"
