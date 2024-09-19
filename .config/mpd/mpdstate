@@ -3,8 +3,8 @@ audio_device_state:1:pulse audio
 audio_device_state:1:ALSA audio
 audio_device_state:1:ncmpcpp visualizer
 state: play
-current: 15
-time: 178.342000
+current: 30
+time: 120.069000
 random: 0
 repeat: 0
 single: 0
@@ -29,4 +29,26 @@ playlist_begin
 13:Eminem - The Death of Slim Shady (Coup De Grâce)_ Expanded Mourner’s Edition (2024) Mp3 320kbps [PMEDIA] ⭐️/18. Guess Who’s Back (skit).mp3
 14:Eminem - The Death of Slim Shady (Coup De Grâce)_ Expanded Mourner’s Edition (2024) Mp3 320kbps [PMEDIA] ⭐️/20. Steve Berman (skit).mp3
 15:Eminem - The Death of Slim Shady (Coup De Grâce)_ Expanded Mourner’s Edition (2024) Mp3 320kbps [PMEDIA] ⭐️/22. Like My Shit.mp3
+16:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/01 Nemesis.mp3
+17:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/02 Armada.mp3
+18:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/03 Magnan Imus.mp3
+19:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/04 Jump!.mp3
+20:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/05 Sons of War.mp3
+21:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/06 Return from Darkness.mp3
+22:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/07 Strength of an Empire.mp3
+23:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/08 Eternal Sorrow.mp3
+24:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/09 The Ancients.mp3
+25:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/10 Birth of a Hero.mp3
+26:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/11 Sky Titans.mp3
+27:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/12 Path to Earth.mp3
+28:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/13 Earth Rising.mp3
+29:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/14 Ironheart.mp3
+30:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/15 Fortress of Seduction.mp3
+31:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/16 Clairvoyant.mp3
+32:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/17 White Witch.mp3
+33:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/18 Spirit of Moravia.mp3
+34:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/19 The Cross of Antiquan.mp3
+35:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/20 Asimov.mp3
+36:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/22 The World Is Mind.mp3
+37:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/23 Little Ben.mp3
 playlist_end
