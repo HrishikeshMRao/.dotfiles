@@ -45,7 +45,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -149,7 +149,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 assign [class="firefox"] $ws1
 assign [class="Tor Browser"] $ws1
-assign [class="gnome-terminal"]    $ws2
+assign [class="Gnome-terminal"]    $ws2
 assign [class="obsidian"] $ws3
 assign [class="rviz2"]   $ws4
 assign [class="gazebo"]  $ws5
@@ -251,9 +251,8 @@ bindsym $mod+o exec obsidian
 
 exec --no-startup-id firefox
 exec --no-startup-id obsidian
-exec --no-startup-id i3-sensible-terminal
-
-###################################### CUSTOM STYLING ###############################################
+exec --no-startup-id gnome-terminal
+##################################### CUSTOM STYLING ###############################################
 
 # set default as no border
 default_border none
