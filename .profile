@@ -26,13 +26,11 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# add mpd if it's not running
-[! -s ~/.config/mpd/pid ] && mpd
-
 #!/bin/bash
 # execute keybinding if the display env variable is set
 
 if [ "$DISPLAY" ] ; then
+   mpd &
    setxkbmap -option ctrl:nocaps
    xcape -e 'Control_L=Escape' -t 175
    xmodmap -e "keycode 64 = BackSpace"   # Remap Left Alt (Alt_L) to Backspace
