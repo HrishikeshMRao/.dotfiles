@@ -5,8 +5,7 @@ These files make your linux experience memorable.
 ## Pre-Requisits
 
 - make sure you are in a linux os.
-- you should have git installed on your machine
-- please download the required software manually untill further commmit that addresses auto download.
+- you should have git installed on your machine.
 
 ## Initial personel configurations
 
