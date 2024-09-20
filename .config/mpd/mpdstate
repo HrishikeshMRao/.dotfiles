@@ -2,9 +2,8 @@ sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:ALSA audio
 audio_device_state:1:ncmpcpp visualizer
-state: play
-current: 30
-time: 120.069000
+state: stop
+current: 0
 random: 0
 repeat: 0
 single: 0
@@ -51,4 +50,6 @@ playlist_begin
 35:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/20 Asimov.mp3
 36:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/22 The World Is Mind.mp3
 37:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/23 Little Ben.mp3
+38:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/01. Dawn FM.mp3
+39:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/01. Fortnight.mp3
 playlist_end

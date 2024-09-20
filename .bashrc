@@ -102,7 +102,7 @@ source ~/Navigation_Bot/dev_ws/install/setup.bash
 source ~/voice_grab/ros2_ws/install/setup.bash
 source /usr/share/gazebo/setup.sh
 source ~/ws_moveit/install/setup.bash
-#
+
 # Force ncmpcpp to use sane bindings
 alias ncmpcpp='ncmpcpp -b .config/ncmpcpp/bindings'
 
