@@ -42,3 +42,5 @@ Sep 19 22:18 : player: played "Eminem - The Death of Slim Shady (Coup De Grâce)
 Sep 19 22:23 : player: played "Eminem - The Death of Slim Shady (Coup De Grâce)_ Expanded Mourner’s Edition (2024) Mp3 320kbps [PMEDIA] ⭐️/13. Guilty Conscience 2.mp3"
 Sep 19 22:24 : player: played "Eminem - The Death of Slim Shady (Coup De Grâce)_ Expanded Mourner’s Edition (2024) Mp3 320kbps [PMEDIA] ⭐️/18. Guess Who’s Back (skit).mp3"
 Sep 19 22:25 : player: played "Eminem - The Death of Slim Shady (Coup De Grâce)_ Expanded Mourner’s Edition (2024) Mp3 320kbps [PMEDIA] ⭐️/20. Steve Berman (skit).mp3"
+Sep 20 16:09 : mixer: Failed to read mixer for 'ALSA audio': no such mixer control: PCM
+Sep 20 16:10 : output: Failed to open mixer for 'ALSA audio': no such mixer control: PCM
