@@ -19,8 +19,6 @@ These files make your linux experience memorable.
      mpd &
      setxkbmap -option ctrl:nocaps
      xcape -e 'Control_L=Escape' -t 175
-     xmodmap -e "keycode 64 = BackSpace"   # Remap Left Alt (Alt_L) to Backspace
-     xmodmap -e "keycode 108 = Return"     # Remap Right Alt (Alt_R) to Enter
   fi
   EOF
   ```
