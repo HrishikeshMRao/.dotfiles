@@ -1,9 +1,9 @@
-sw_volume: 100
+sw_volume: 30
 audio_device_state:1:pulse audio
-audio_device_state:1:ALSA audio
 audio_device_state:1:ncmpcpp visualizer
-state: stop
-current: 0
+state: pause
+current: 72
+time: 16.230000
 random: 0
 repeat: 0
 single: 0
@@ -52,4 +52,112 @@ playlist_begin
 37:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/23 Little Ben.mp3
 38:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/01. Dawn FM.mp3
 39:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/01. Fortnight.mp3
+40:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/01. Politik.mp3
+41:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/01. Politik.mp3
+42:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/02. In My Place.mp3
+43:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/03. God Put A Smile Upon Your Face.mp3
+44:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/04. The Scientist.mp3
+45:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/05. Clocks.mp3
+46:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/06. Daylight.mp3
+47:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/07. Green Eyes.mp3
+48:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/08. Warning Sign.mp3
+49:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/09. A Whisper.mp3
+50:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/10. A Rush Of Blood To The Head.mp3
+51:Coldplay - Music Of The Spheres (2021) [FLAC] 88/01. Music Of The Spheres I.flac
+52:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0001
+53:Coldplay - Music Of The Spheres (2021) [FLAC] 88/02. Higher Power.flac
+54:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0002
+55:Coldplay - Music Of The Spheres (2021) [FLAC] 88/03. Humankind.flac
+56:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0003
+57:Coldplay - Music Of The Spheres (2021) [FLAC] 88/04. Alien Choir.flac
+58:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0004
+59:Coldplay - Music Of The Spheres (2021) [FLAC] 88/07. People Of The Pride.flac
+60:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0007
+61:Coldplay - Music Of The Spheres (2021) [FLAC] 88/08. Biutyful.flac
+62:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0008
+63:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0009
+64:Coldplay - Music Of The Spheres (2021) [FLAC] 88/11. Infinity Sign.flac
+65:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0011
+66:Coldplay - Music Of The Spheres (2021) [FLAC] 88/12. Coloratura.flac
+67:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0012
+68:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/02. The Tortured Poets Department.mp3
+69:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/03. My Boy Only Breaks His Favorite Toys.mp3
+70:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/04. Down Bad.mp3
+71:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/05. So Long, London.mp3
+72:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/06. But Daddy I Love Him.mp3
+73:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/07. Fresh Out The Slammer.mp3
+74:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/09. Guilty as Sin_.mp3
+75:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/10. Who’s Afraid of Little Old Me_.mp3
+76:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/11. I Can Fix Him (No Really I Can).mp3
+77:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/12. loml.mp3
+78:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/13. I Can Do It With a Broken Heart.mp3
+79:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/14. The Smallest Man Who Ever Lived.mp3
+80:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/15. The Alchemy.mp3
+81:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/16. Clara Bow.mp3
+82:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/17. The Black Dog.mp3
+83:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/18. imgonnagetyouback.mp3
+84:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/19. The Albatross.mp3
+85:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/20. Chloe or Sam or Sophia or Marcus.mp3
+86:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/21. How Did It End_.mp3
+87:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/22. So High School.mp3
+88:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/23. I Hate It Here.mp3
+89:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/24. thanK you aIMee.mp3
+90:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/25. I Look in People's Windows.mp3
+91:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/26. The Prophecy.mp3
+92:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/27. Cassandra.mp3
+93:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/28. Peter.mp3
+94:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/29. The Bolter.mp3
+95:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/30. Robin.mp3
+96:Taylor Swift - THE TORTURED POETS DEPARTMENT THE ANTHOLOGY (2024) Mp3 320kbps [PMEDIA] ⭐️/31. The Manuscript.mp3
+97:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/01 Nemesis.mp3
+98:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/02 Armada.mp3
+99:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/03 Magnan Imus.mp3
+100:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/04 Jump!.mp3
+101:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/05 Sons of War.mp3
+102:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/06 Return from Darkness.mp3
+103:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/07 Strength of an Empire.mp3
+104:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/08 Eternal Sorrow.mp3
+105:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/09 The Ancients.mp3
+106:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/10 Birth of a Hero.mp3
+107:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/11 Sky Titans.mp3
+108:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/12 Path to Earth.mp3
+109:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/13 Earth Rising.mp3
+110:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/14 Ironheart.mp3
+111:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/15 Fortress of Seduction.mp3
+112:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/16 Clairvoyant.mp3
+113:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/17 White Witch.mp3
+114:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/18 Spirit of Moravia.mp3
+115:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/19 The Cross of Antiquan.mp3
+116:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/20 Asimov.mp3
+117:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/22 The World Is Mind.mp3
+118:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/23 Little Ben.mp3
+119:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/21 Stormwatch.mp3
+120:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/01. Dawn FM.mp3
+121:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/02. Gasoline.mp3
+122:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/03. How Do I Make You Love Me_.mp3
+123:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/04. Take My Breath.mp3
+124:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/05. Sacrifice.mp3
+125:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/06. A Tale By Quincy.mp3
+126:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/07. Out of Time.mp3
+127:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/09. Best Friends.mp3
+128:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/10. Is There Someone Else_.mp3
+129:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/11. Starry Eyes.mp3
+130:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/12. Every Angel is Terrifying.mp3
+131:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/13. Don’t Break My Heart.mp3
+132:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/15. Less Than Zero.mp3
+133:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/16. Phantom Regret by Jim.mp3
+134:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/01. Dawn FM.mp3
+135:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/02. Gasoline.mp3
+136:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/03. How Do I Make You Love Me_.mp3
+137:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/04. Take My Breath.mp3
+138:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/05. Sacrifice.mp3
+139:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/06. A Tale By Quincy.mp3
+140:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/07. Out of Time.mp3
+141:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/09. Best Friends.mp3
+142:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/10. Is There Someone Else_.mp3
+143:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/11. Starry Eyes.mp3
+144:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/12. Every Angel is Terrifying.mp3
+145:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/13. Don’t Break My Heart.mp3
+146:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/15. Less Than Zero.mp3
+147:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/16. Phantom Regret by Jim.mp3
 playlist_end
