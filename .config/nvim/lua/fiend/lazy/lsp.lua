@@ -16,6 +16,7 @@ return {
           "bashls",
           "marksman",
           "markdownlint",
+          "mdformat",
           "markdown-oxide",
         },
       })
