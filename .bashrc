@@ -110,3 +110,13 @@ alias ncmpcpp='ncmpcpp -b .config/ncmpcpp/bindings'
 if  [ -z "$TMUX" ]; then
     tmux attach
 fi
+
+# install system binaries
+# install ripgrep
+if ! command -v rg &> /dev/null; then
+    sudo apt update && sudo apt install -y ripgrep
+fi
+# install zoxide
+if ! command -v zoxide &> /dev/null; then
+    curl -sSf https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+fi

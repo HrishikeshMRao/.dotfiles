@@ -1,9 +1,9 @@
-sw_volume: 30
+sw_volume: 23
 audio_device_state:1:pulse audio
 audio_device_state:1:ncmpcpp visualizer
 state: pause
-current: 72
-time: 16.230000
+current: 44
+time: 285.980000
 random: 0
 repeat: 0
 single: 0
@@ -160,4 +160,74 @@ playlist_begin
 145:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/13. Don’t Break My Heart.mp3
 146:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/15. Less Than Zero.mp3
 147:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/16. Phantom Regret by Jim.mp3
+148:The Weeknd - Dawn FM (2022) Mp3 320kbps [PMEDIA] ⭐️/14. I Heard You’re Married.mp3
+149:Coldplay - Music Of The Spheres (2021) [FLAC] 88/01. Music Of The Spheres I.flac
+150:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0001
+151:Coldplay - Music Of The Spheres (2021) [FLAC] 88/02. Higher Power.flac
+152:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0002
+153:Coldplay - Music Of The Spheres (2021) [FLAC] 88/03. Humankind.flac
+154:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0003
+155:Coldplay - Music Of The Spheres (2021) [FLAC] 88/04. Alien Choir.flac
+156:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0004
+157:Coldplay - Music Of The Spheres (2021) [FLAC] 88/07. People Of The Pride.flac
+158:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0007
+159:Coldplay - Music Of The Spheres (2021) [FLAC] 88/08. Biutyful.flac
+160:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0008
+161:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0009
+162:Coldplay - Music Of The Spheres (2021) [FLAC] 88/11. Infinity Sign.flac
+163:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0011
+164:Coldplay - Music Of The Spheres (2021) [FLAC] 88/12. Coloratura.flac
+165:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0012
+166:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/01. Politik.mp3
+167:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/02. In My Place.mp3
+168:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/03. God Put A Smile Upon Your Face.mp3
+169:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/04. The Scientist.mp3
+170:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/05. Clocks.mp3
+171:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/06. Daylight.mp3
+172:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/07. Green Eyes.mp3
+173:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/08. Warning Sign.mp3
+174:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/09. A Whisper.mp3
+175:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/10. A Rush Of Blood To The Head.mp3
+176:Coldplay - A Rush Of Blood To The Head (2002) [MP3 320] 88/11. Amsterdam.mp3
+177:Coldplay - Music Of The Spheres (2021) [FLAC] 88/01. Music Of The Spheres I.flac
+178:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0001
+179:Coldplay - Music Of The Spheres (2021) [FLAC] 88/02. Higher Power.flac
+180:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0002
+181:Coldplay - Music Of The Spheres (2021) [FLAC] 88/03. Humankind.flac
+182:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0003
+183:Coldplay - Music Of The Spheres (2021) [FLAC] 88/04. Alien Choir.flac
+184:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0004
+185:Coldplay - Music Of The Spheres (2021) [FLAC] 88/07. People Of The Pride.flac
+186:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0007
+187:Coldplay - Music Of The Spheres (2021) [FLAC] 88/08. Biutyful.flac
+188:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0008
+189:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0009
+190:Coldplay - Music Of The Spheres (2021) [FLAC] 88/11. Infinity Sign.flac
+191:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0011
+192:Coldplay - Music Of The Spheres (2021) [FLAC] 88/12. Coloratura.flac
+193:Coldplay - Music Of The Spheres (2021) [FLAC] 88/Coldplay - Music Of The Spheres.cue/track0012
+194:Coldplay - Music Of The Spheres (2021) [FLAC] 88/09. Music Of The Spheres II.flac
+195:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/01 Nemesis.mp3
+196:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/02 Armada.mp3
+197:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/03 Magnan Imus.mp3
+198:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/04 Jump!.mp3
+199:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/05 Sons of War.mp3
+200:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/06 Return from Darkness.mp3
+201:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/07 Strength of an Empire.mp3
+202:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/08 Eternal Sorrow.mp3
+203:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/09 The Ancients.mp3
+204:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/10 Birth of a Hero.mp3
+205:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/11 Sky Titans.mp3
+206:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/12 Path to Earth.mp3
+207:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/13 Earth Rising.mp3
+208:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/14 Ironheart.mp3
+209:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/15 Fortress of Seduction.mp3
+210:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/16 Clairvoyant.mp3
+211:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/17 White Witch.mp3
+212:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/18 Spirit of Moravia.mp3
+213:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/19 The Cross of Antiquan.mp3
+214:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/20 Asimov.mp3
+215:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/22 The World Is Mind.mp3
+216:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/23 Little Ben.mp3
+217:Two Steps From Hell/Two Steps From Hell-Classics Vol.1 (2013)[Mp3]/21 Stormwatch.mp3
 playlist_end
