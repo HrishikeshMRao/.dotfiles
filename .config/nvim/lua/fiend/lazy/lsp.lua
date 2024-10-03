@@ -18,6 +18,9 @@ return {
           "markdownlint",
           "mdformat",
           "markdown-oxide",
+          "proselint",
+          "prosemd_lsp",
+          "prettier",
         },
       })
     end,
@@ -43,6 +46,7 @@ return {
       lspconfig.bashls.setup({ capabilities = capabilities })
       lspconfig.pyright.setup({ capabilities = capabilities, filetypes = { "python" } })
       lspconfig.marksman.setup({ capabilities = capabilities, filetypes = { "markdown" } })
+      lspconfig.prosemd_lsp.setup({ capabilities = capabilities, filetypes = { "markdown" } })
       lspconfig.markdown_oxide.setup({
         -- Ensure that dynamicRegistration is enabled! This allows the LS to take into account actions like the
         -- Create Unresolved File code action, resolving completions for unindexed code blocks, ...
