@@ -4,23 +4,15 @@ return {
     config = function()
       require("mason").setup({
         ensure_installed = {
-          "debugpy",
-          "codelldb",
           "clang-format",
           "lua_ls",
-          "pylsp",
           "pyright",
           "clangd",
-          "rust_analyzer",
-          "dockerls",
           "bashls",
           "marksman",
           "markdownlint",
-          "mdformat",
           "markdown-oxide",
-          "proselint",
-          "prosemd_lsp",
-          "prettier",
+          "prettierd",
         },
       })
     end,
@@ -41,12 +33,9 @@ return {
 
       lspconfig.lua_ls.setup({ capabilities = capabilities })
       lspconfig.clangd.setup({ capabilities = capabilities })
-      lspconfig.rust_analyzer.setup({ capabilities = capabilities })
-      lspconfig.dockerls.setup({ capabilities = capabilities })
       lspconfig.bashls.setup({ capabilities = capabilities })
       lspconfig.pyright.setup({ capabilities = capabilities, filetypes = { "python" } })
       lspconfig.marksman.setup({ capabilities = capabilities, filetypes = { "markdown" } })
-      lspconfig.prosemd_lsp.setup({ capabilities = capabilities, filetypes = { "markdown" } })
       lspconfig.markdown_oxide.setup({
         -- Ensure that dynamicRegistration is enabled! This allows the LS to take into account actions like the
         -- Create Unresolved File code action, resolving completions for unindexed code blocks, ...

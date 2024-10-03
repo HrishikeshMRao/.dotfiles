@@ -6,7 +6,7 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Move selected lines up or down in visual mode and re-indent
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")  -- Move selected lines down
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")  -- Move selected lines up
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")  -- Move selected lines upper
 
 -- Join lines without losing cursor position
 vim.keymap.set("n", "J", "mzJ`z")
