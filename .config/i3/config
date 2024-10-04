@@ -124,10 +124,10 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1Browser"
-set $ws2 "2Tmux"
-set $ws3 "3Obsidian"
-set $ws4 "4Rviz"
-set $ws5 "5Gazebo"
+set $ws2 "2Shell"
+set $ws3 "3Reader"
+set $ws4 "4Visualizer"
+set $ws5 "5Simulator"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -165,6 +165,7 @@ assign [class="picard"] $ws4
 assign [class="qbittorrent"] $ws4
 assign [class="Gnome-terminal"] $ws2
 assign [class="obsidian"] $ws3
+assign [class="com.github.johnfactotum.Foliate"] $ws3
 assign [class="rviz2"]   $ws4
 assign [class="gazebo"]  $ws5
 
@@ -262,6 +263,7 @@ bindsym $mod+m exec nautilus
 bindsym $mod+i exec "cd /opt/tor-browser ; ./start-tor-browser.desktop"
 bindsym $mod+b exec firefox
 bindsym $mod+o exec obsidian
+bindsym $mod+t exec "flatpak run com.github.johnfactotum.Foliate"
 
 exec --no-startup-id firefox
 exec --no-startup-id gnome-terminal

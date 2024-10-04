@@ -112,5 +112,5 @@ if  [ -z "$TMUX" ]; then
 fi
 
 eval "$(ssh-agent -s)"
-eval "$(zoxide init --cmd cd bash)"
 export PATH="$HOME/.local/bin:$PATH"
+eval "$(zoxide init --cmd cd bash)"
