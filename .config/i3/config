@@ -238,7 +238,7 @@ bar {
 # load the wall paper every time the config file is loaded
 exec_always feh --bg-scale ~/Pictures/Wallpapers/"wallpaperflare.com_wallpaper.jpg"
 # for true terminator transparency
-exec --no-startup-id picom -b
+# exec --no-startup-id picom -b
 
 # screen lock press Fn+F9
 bindsym F9 exec i3lock
