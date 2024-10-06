@@ -128,7 +128,7 @@ set $ws2 "2Shell"
 set $ws3 "3Reader"
 set $ws4 "4Visualizer"
 set $ws5 "5Simulator"
-set $ws6 "6"
+set $ws6 "6PassMan"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
@@ -169,6 +169,7 @@ assign [class="obsidian"] $ws3
 assign [class="com.github.johnfactotum.Foliate"] $ws3
 assign [class="rviz2"]   $ws4
 assign [class="gazebo"]  $ws5
+assign [class="KeePassXC"]  $ws6
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -239,7 +240,6 @@ bar {
 
 # load the wall paper every time the config file is loaded
 exec_always feh --bg-scale ~/Pictures/Wallpapers/"wallpaperflare.com_wallpaper.jpg"
-exec --no-startup-id keepassxc-cli open --no-password --key-file /home/fiend/Passwords/passkey /home/fiend/Passwords/Passwords.kdbx
 # for true terminator transparency
 # exec --no-startup-id picom -b
 
@@ -268,6 +268,7 @@ bindsym $mod+o exec obsidian
 bindsym $mod+t exec "flatpak run com.github.johnfactotum.Foliate"
 
 exec --no-startup-id firefox
+exec --no-startup-id keepassxc
 exec --no-startup-id kitty
 ##################################### CUSTOM STYLING ###############################################
 
