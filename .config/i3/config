@@ -239,7 +239,7 @@ bar {
 
 # load the wall paper every time the config file is loaded
 exec_always feh --bg-scale ~/Pictures/Wallpapers/"wallpaperflare.com_wallpaper.jpg"
-exec --no-startup-id keepassxc-cli open --no-password --key-file /home/fiend/Passwords/passkey /home/fiend/Passwords/Passwords.kdb
+exec --no-startup-id keepassxc-cli open --no-password --key-file /home/fiend/Passwords/passkey /home/fiend/Passwords/Passwords.kdbx
 # for true terminator transparency
 # exec --no-startup-id picom -b
 
