@@ -57,7 +57,7 @@ bindsym XF86AudioPrev exec playerctl previous
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -164,6 +164,7 @@ assign [class="Tor Browser"] $ws4
 assign [class="picard"] $ws4
 assign [class="qbittorrent"] $ws4
 assign [class="Gnome-terminal"] $ws2
+assign [class="kitty"] $ws2
 assign [class="obsidian"] $ws3
 assign [class="com.github.johnfactotum.Foliate"] $ws3
 assign [class="rviz2"]   $ws4
@@ -205,8 +206,8 @@ bindsym $mod+r mode "resize"
 
 ############################### ONLY IF BORDER AND TITLE ENABLED ##################################
 
-set $bg-color 	         #1f1d2e
-set $inactive-bg-color   #191724
+set $bg-color 	         #171717
+set $inactive-bg-color   #171717
 set $text-color          #e0def4
 set $text-color-focus    #eb6f92
 set $inactive-text-color #ea9a97
@@ -266,7 +267,7 @@ bindsym $mod+o exec obsidian
 bindsym $mod+t exec "flatpak run com.github.johnfactotum.Foliate"
 
 exec --no-startup-id firefox
-exec --no-startup-id gnome-terminal
+exec --no-startup-id kitty
 ##################################### CUSTOM STYLING ###############################################
 
 # set default as no border
