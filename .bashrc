@@ -111,6 +111,7 @@ if  [ -z "$TMUX" ]; then
     tmux attach
 fi
 
-eval "$(ssh-agent -s)"
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init --cmd cd bash)"
+
+eval $(keychain --eval --agents ssh ~/.ssh/id_ed25519)
