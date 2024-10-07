@@ -20,12 +20,27 @@ These files make your linux experience memorable.
      setxkbmap -option ctrl:nocaps
      xcape -e 'Control_L=Escape' -t 175
   fi
+  ~/auto_keychain.expect
+  EOF
+  ```
+  !! - Do the following only if u want automatic passphrase setup for ssh. !!
+  - Remember to substitute your ssh passphrase in the place of \[\[YOUR_PASSPHRASE\]\]
+
+  ```bash
+  cat << 'EOF' >> ~/auto_keychain.expect
+  #!/usr/bin/expect
+  
+  spawn keychain --eval --agents ssh /home/{$USER}/.ssh/id_ed25519
+  
+  expect "Enter passphrase for* " { send "[[YOUR_PASSPHRASE]]\r" }
+  
+  interact
   EOF
   ```
   
 - installed the required packages for the dotfiles to act on (non root user):
   ```bash
-  sudo apt install nvim mpd i3-wm tmux picom rofi ncmpcpp fzf ripgrep keychain
+  sudo apt install nvim mpd i3-wm tmux picom rofi ncmpcpp fzf ripgrep keychain expect
   ```
 
   to install zoxide:
