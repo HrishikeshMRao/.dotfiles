@@ -34,6 +34,11 @@ These files make your linux experience memorable.
   export PATH="$HOME/.local/bin:$PATH"
   ```
 
+  install kitty with:
+  ```bash
+  curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+  ```
+
 ## Steps to replicate installation :
 
 - clone this repository into your home folder
