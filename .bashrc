@@ -113,4 +113,4 @@ fi
 
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init --cmd cd bash)"
-#eval $(keychain --eval --agents ssh ~/.ssh/id_ed25519)
+eval $(keychain --eval --agents ssh ~/.ssh/id_ed25519)
