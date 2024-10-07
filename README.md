@@ -23,7 +23,7 @@ These files make your linux experience memorable.
   ~/auto_keychain.expect
   EOF
   ```
-  !! - Do the following only if u want automatic passphrase setup for ssh. !!
+  - **Do the following only if u want automatic passphrase setup for ssh.**
   - Remember to substitute your ssh passphrase in the place of \[\[YOUR_PASSPHRASE\]\]
 
   ```bash
