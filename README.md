@@ -30,7 +30,7 @@ These files make your linux experience memorable.
   cat << 'EOF' >> ~/auto_keychain.expect
   #!/usr/bin/expect
   
-  spawn keychain --eval --agents ssh /home/{$USER}/.ssh/id_ed25519
+  spawn keychain --eval --agents ssh /home/$env{USER}/.ssh/id_ed25519
   
   expect "Enter passphrase for* " { send "[[YOUR_PASSPHRASE]]\r" }
   
