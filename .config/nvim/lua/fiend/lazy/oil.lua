@@ -66,13 +66,18 @@ return {
         -- it will use the mapping at require("oil.actions").<name>
         -- Set to `false` to remove a keymap
         -- See :help oil-actions for a list of all available actions
+        use_default_keymaps = false,
+        -- Using vim.keymap.set (recommended in Neovim >= 0.7)
+        vim.keymap.set("n", "<leader>-", function()
+          require("oil").open()
+        end, { desc = "Open Oil" }),
         keymaps = {
           ["g?"] = "actions.show_help",
           ["<CR>"] = "actions.select",
-          ["V"]= { "actions.select", opts = { vertical = true }, desc = "Open the entry in a vertical split" },
-          ["H"]= { "actions.select", opts = { horizontal = true }, desc = "Open the entry in a horizontal split" },
+          ["V"] = { "actions.select", opts = { vertical = true }, desc = "Open the entry in a vertical split" },
+          ["H"] = { "actions.select", opts = { horizontal = true }, desc = "Open the entry in a horizontal split" },
           ["T"] = { "actions.select", opts = { tab = true }, desc = "Open the entry in new tab" },
-          ["P"]= "actions.preview",
+          ["P"] = "actions.preview",
           ["X"] = "actions.close",
           ["R"] = "actions.refresh",
           ["-"] = "actions.parent",
@@ -85,8 +90,7 @@ return {
           ["g\\"] = "actions.toggle_trash",
         },
         -- Set to false to disable all of the above keymaps
-                --
-        use_default_keymaps = false,
+        --
         view_options = {
           -- Show files and directories that start with "."
           show_hidden = false,

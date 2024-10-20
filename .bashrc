@@ -105,6 +105,8 @@ source ~/ws_moveit/install/setup.bash
 
 # Force ncmpcpp to use sane bindings
 alias ncmpcpp='ncmpcpp -b .config/ncmpcpp/bindings'
+alias fman='compgen -c | fzf | xargs man'
+alias fsize='du -ah . | sort -hr | head -n 10'
 
 # Check if tmux is already running
 if  [ -z "$TMUX" ]; then
