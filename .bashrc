@@ -1,4 +1,4 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
+
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -20,6 +20,7 @@ HISTSIZE= HISTFILESIZE= #Infinite
 
 set -o vi
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f "$HOME/.config/aliasrc" ]&& source "$HOME/.config/aliasrc"
 
 # check the window size after each command and, if necessary,
@@ -97,16 +98,33 @@ bind "set menu-complete-display-prefix on"
 export LS_COLORS='di=38;5;122:ow=38;5;122:tw=38;5;122:fi=38;5;210:ln=38;5;210:pi=38;5;210:so=38;5;210:bd=38;5;210:cd=38;5;210:or=38;5;210:mi=38;5;210:ex=38;5;74:*.zip=4;223:*.txt=38;5;223'
 export GCC_COLORS='error= 38;5;211:warning=38;5;223:note=38;5;159:caret=38;5;183:locus=38;5;183:quote=38;5;183'
 export PS1="\n\[\033[38;5;175m\]\u \[\033[38;5;180m\]\w\n\[\033[38;5;74m\]\$(echo \h | cut -d'-' -f1,2) \\[\033[38;5;183m\]\$ \[\033[38;5;252m\]"
+
 source /opt/ros/humble/setup.bash
 source ~/Navigation_Bot/dev_ws/install/setup.bash
 source ~/voice_grab/ros2_ws/install/setup.bash
 source /usr/share/gazebo/setup.sh
 source ~/ws_moveit/install/setup.bash
 
+man() {
+  /usr/bin/man "$@" | \
+    col -b | \
+    nvim -R -c 'set ft=man nomod nolist' -
+}
+
 # Force ncmpcpp to use sane bindings
 alias ncmpcpp='ncmpcpp -b .config/ncmpcpp/bindings'
-alias fman='compgen -c | fzf | xargs man'
+alias fman="manpath | \
+    tr ':' '\n' | \
+    xargs -I {} find {} -type f | \
+    grep '/man[1-9]/' | \
+    sed 's#.*/man[1-9]/\(.*\)\.[1-9].*#\1#' | \
+    sort -u | \
+    fzf --preview 'man -P cat {}' | \
+    xargs -r -I {} sh -c 'man {} | col -b | nvim -R -c \"set ft=man nomod nolist\" -'
+"
 alias fsize='du -ah . | sort -hr | head -n 10'
+alias rpush='rsync -a /home/fiend/Desktop/Rpi/ pi@fiendpi.local:/home/pi/Rpi/'
+alias rpull='rsync -a pi@fiendpi.local:/home/pi/Rpi/ /home/fiend/Desktop/Rpi/'
 
 # Check if tmux is already running
 if  [ -z "$TMUX" ]; then
@@ -116,3 +134,8 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 eval "$(zoxide init --cmd cd bash)"
 eval $(keychain --eval --agents ssh ~/.ssh/id_ed25519 > /dev/null 2>&1)
+
+export PATH=$PATH:/home/fiend/.spicetify
+
+
+

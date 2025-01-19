@@ -25,6 +25,25 @@ return {
   },
   { "nvimdev/lspsaga.nvim" },
   {
+    "paretje/nvim-man",
+    config = function()
+      local autocmd = vim.api.nvim_create_autocmd
+      autocmd("User", {
+        pattern = "ManOpen",
+        callback = function()
+          -- Close the man page with 'q'
+          vim.keymap.set("n", "q", ":quit<CR>", { buffer = true, silent = true })
+
+          -- Scroll down with 'j' and up with 'k'
+          vim.keymap.set("n", "j", "<C-D>", { buffer = true })
+          vim.keymap.set("n", "k", "<C-U>", { buffer = true })
+        end,
+      })
+      vim.keymap.set("n", "<leader>k", ":Man <C-R><C-W><CR>", { noremap = true, silent = true })
+      vim.g.nvim_man_default_target = "current"
+    end,
+  },
+  {
     "neovim/nvim-lspconfig",
     config = function()
       -- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
@@ -58,6 +77,7 @@ return {
       local augroup = vim.api.nvim_create_augroup
       local autocmd = vim.api.nvim_create_autocmd
       local LSPGroup = augroup("LSPGroup", {})
+
       autocmd({ "BufWritePre" }, {
         group = LSPGroup,
         pattern = "*",
@@ -74,7 +94,7 @@ return {
           vim.keymap.set("n", "<leader>ld", function()
             vim.lsp.buf.definition()
           end, opts)
-          vim.keymap.set("n", "<leader>lk", function()
+          vim.keymap.set("n", "K", function()
             vim.lsp.buf.hover()
           end, opts)
           vim.keymap.set("n", "<leader>li", function()

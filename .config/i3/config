@@ -72,10 +72,10 @@ bindsym $mod+d exec --no-startup-id rofi -show run
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -84,10 +84,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -96,10 +96,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+- split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+| split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -126,10 +126,10 @@ bindsym $mod+a focus parent
 set $ws1 "1Browser"
 set $ws2 "2Shell"
 set $ws3 "3Reader"
-set $ws4 "4Visualizer"
+set $ws4 "4MusicPlayer"
 set $ws5 "5Simulator"
-set $ws6 "6PassMan"
-set $ws7 "7"
+set $ws6 "6Visualizer"
+set $ws7 "7PassMan"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
@@ -160,16 +160,17 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 
 assign [class="firefox"] $ws1
-assign [class="Tor Browser"] $ws4
-assign [class="picard"] $ws4
-assign [class="qbittorrent"] $ws4
+assign [class="Tor Browser"] $ws5
+assign [class="picard"] $ws5
+assign [class="qbittorrent"] $ws5
 assign [class="Gnome-terminal"] $ws2
 assign [class="kitty"] $ws2
 assign [class="obsidian"] $ws3
 assign [class="com.github.johnfactotum.Foliate"] $ws3
-assign [class="rviz2"]   $ws4
+assign [class="rviz2"]   $ws6
 assign [class="gazebo"]  $ws5
-assign [class="KeePassXC"]  $ws6
+assign [class="KeePassXC"]  $ws7
+assign [class="Spotify"]  $ws4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -209,10 +210,10 @@ bindsym $mod+r mode "resize"
 
 set $bg-color 	         #171717
 set $inactive-bg-color   #171717
-set $text-color          #e0def4
-set $text-color-focus    #eb6f92
-set $inactive-text-color #ea9a97
-set $urgent-bg-color     #2a273f
+set $text-color          #b4befe
+set $text-color-focus    #89dceb
+set $inactive-text-color #b4befe
+set $urgent-bg-color     #171717
 
 # window colors
 #                       border              background         text                 indicator
@@ -228,7 +229,7 @@ bar {
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
         colors {
 	    	background $inactive-bg-color
-	    	separator #f6c177
+	    	separator #89dceb
             #                  border             background         text
 	    	focused_workspace  $bg-color          $bg-color          $text-color-focus
 	    	inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
@@ -239,7 +240,7 @@ bar {
 ################################## CUSTOM BINDING START HERE #######################################
 
 # load the wall paper every time the config file is loaded
-exec_always feh --bg-scale ~/Pictures/Wallpapers/"wallpaperflare.com_wallpaper.jpg"
+exec_always feh --bg-max ~/Pictures/Wallpapers/Arcane/Jayce/"S2 EP9 4K (101).jpg"
 # for true terminator transparency
 # exec --no-startup-id picom -b
 
@@ -265,10 +266,12 @@ bindsym $mod+m exec nautilus
 bindsym $mod+i exec "cd /opt/tor-browser ; ./start-tor-browser.desktop"
 bindsym $mod+b exec firefox
 bindsym $mod+o exec obsidian
+bindsym $mod+q exec qbittorrent
 bindsym $mod+t exec "flatpak run com.github.johnfactotum.Foliate"
 
 exec --no-startup-id firefox
 exec --no-startup-id keepassxc
+exec --no-startup-id spotify
 exec --no-startup-id kitty
 ##################################### CUSTOM STYLING ###############################################
 

@@ -32,9 +32,6 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 -- Delete text without yanking it
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
--- Exit insert mode with <C-c> (Ctrl+C)
-vim.keymap.set("i", "<C-c>", "<Esc>")
-
 -- Disable Q in normal mode
 vim.keymap.set("n", "Q", "<nop>")
 
