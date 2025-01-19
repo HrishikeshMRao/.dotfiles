@@ -1,0 +1,13 @@
+# Enable menu-complete for tab
+set show-all-if-ambiguous on
+set menu-complete-display-prefix on
+TAB: menu-complete
+
+# Custom bindings in Vi mode
+set editing-mode vi
+set keymap vi-command
+
+# History search
+"k": history-search-backward
+"j": history-search-forward
+
