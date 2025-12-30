@@ -48,24 +48,46 @@ return {
     config = function()
       -- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
-      local lspconfig = require("lspconfig")
 
-      lspconfig.lua_ls.setup({ capabilities = capabilities })
-      lspconfig.clangd.setup({ capabilities = capabilities })
-      lspconfig.bashls.setup({ capabilities = capabilities })
-      lspconfig.pyright.setup({ capabilities = capabilities, filetypes = { "python" } })
-      lspconfig.marksman.setup({ capabilities = capabilities, filetypes = { "markdown" } })
-      lspconfig.markdown_oxide.setup({
-        -- Ensure that dynamicRegistration is enabled! This allows the LS to take into account actions like the
-        -- Create Unresolved File code action, resolving completions for unindexed code blocks, ...
-        capabilities = vim.tbl_deep_extend("force", capabilities, {
-          workspace = {
-            didChangeWatchedFiles = {
-              dynamicRegistration = true,
-            },
+      local lsps = {
+        {
+          "markdown_oxide",
+          {
+            -- Ensure that dynamicRegistration is enabled! This allows the LS to take into account actions like the
+            -- Create Unresolved File code action, resolving completions for unindexed code blocks, ...
+            capabilities = vim.tbl_deep_extend("force", capabilities, {
+              workspace = {
+                didChangeWatchedFiles = {
+                  dynamicRegistration = true,
+                },
+              },
+            }),
           },
-        }),
-      })
+        },
+        { "marksman", { capabilities = capabilities, filetypes = { "markdown" } } },
+        { "pyright", { capabilities = capabilities, filetypes = { "python" } } },
+        { "lua_ls", { capabilities = capabilities } },
+        { "bashls", { capabilities = capabilities } },
+        {
+          "clangd",
+          {
+            cmd = { "clangd", "--background-index", "--clang-tidy", "--log=verbose" },
+            init_options = {
+              fallbackFlags = { "-std=c++17" },
+            },
+            capabilities = capabilities,
+          },
+        },
+      }
+
+      for _, lsp in pairs(lsps) do
+        local name, config = lsp[1], lsp[2]
+        vim.lsp.enable(name)
+        if config then
+          vim.lsp.config(name, config)
+        end
+      end
+
       vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
         border = "rounded", -- Adds a rounded border to the hover window
         max_width = 80, -- Sets the maximum width of the hover window

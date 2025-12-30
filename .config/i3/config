@@ -169,8 +169,9 @@ assign [class="obsidian"] $ws3
 assign [class="com.github.johnfactotum.Foliate"] $ws3
 assign [class="rviz2"]   $ws6
 assign [class="gazebo"]  $ws5
+assign [class="coppeliasim"]  $ws5
 assign [class="KeePassXC"]  $ws7
-assign [class="Spotify"]  $ws4
+assign [class="harmonymusic"]  $ws4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -271,7 +272,7 @@ bindsym $mod+t exec "flatpak run com.github.johnfactotum.Foliate"
 
 exec --no-startup-id firefox
 exec --no-startup-id keepassxc
-exec --no-startup-id spotify
+exec --no-startup-id harmonymusic
 exec --no-startup-id kitty
 ##################################### CUSTOM STYLING ###############################################
 

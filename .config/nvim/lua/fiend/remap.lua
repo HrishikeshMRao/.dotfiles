@@ -45,7 +45,11 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")  -- Next item in location l
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")  -- Previous item in location list
 
 -- Find and replace all occurrences of the word under the cursor
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>w", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- Normal mode: Ctrl+F to start find-and-replace for any word you type
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r>=input('Find: ')<CR>\>/\=input('Replace: ') /gI<Left><Left><Left><Left>]])
+
 
 -- Make the current file executable with <leader>x
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })

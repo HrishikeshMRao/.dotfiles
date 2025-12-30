@@ -86,7 +86,7 @@ if ! shopt -oq posix; then
 fi
 
 
-bind -f ~/.inputrc
+bind -f ~/.dotfiles/.inputrc
 
 bind "set show-all-if-ambiguous on"
 bind 'TAB: menu-complete'
@@ -99,10 +99,10 @@ export LS_COLORS='di=38;5;122:ow=38;5;122:tw=38;5;122:fi=38;5;210:ln=38;5;210:pi
 export GCC_COLORS='error= 38;5;211:warning=38;5;223:note=38;5;159:caret=38;5;183:locus=38;5;183:quote=38;5;183'
 export PS1="\n\[\033[38;5;175m\]\u \[\033[38;5;180m\]\w\n\[\033[38;5;74m\]\$(echo \h | cut -d'-' -f1,2) \\[\033[38;5;183m\]\$ \[\033[38;5;252m\]"
 
-# source /opt/ros/humble/setup.bash
-# source ~/Navigation_Bot/dev_ws/install/setup.bash
-# source ~/voice_grab/ros2_ws/install/setup.bash
+source /opt/ros/humble/setup.bash
 # source /usr/share/gazebo/setup.sh
+#source ~/Navigation_Bot/dev_ws/install/setup.bash
+# source ~/voice_grab/ros2_ws/install/setup.bash
 # source ~/ws_moveit/install/setup.bash
 
 man() {
@@ -132,10 +132,9 @@ if  [ -z "$TMUX" ]; then
 fi
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 eval "$(zoxide init --cmd cd bash)"
 eval $(keychain --eval --agents ssh ~/.ssh/id_ed25519 > /dev/null 2>&1)
-
-export PATH=$PATH:/home/fiend/.spicetify
 
 
 
