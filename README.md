@@ -40,7 +40,7 @@ These files make your linux experience memorable.
   
 - installed the required packages for the dotfiles to act on (non root user):
   ```bash
-  sudo apt install nvim mpd i3-wm tmux picom rofi ncmpcpp fzf ripgrep keychain expect
+  sudo apt install neovim mpd i3-wm tmux picom rofi ncmpcpp fzf ripgrep keychain expect
   ```
 
   to install zoxide:
