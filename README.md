@@ -87,6 +87,7 @@ These files make your linux experience memorable.
     ```
 - run this command below and your are good to go:
     ```bash
+    rm -r .bashrc
     cd ~/.dotfiles
     stow .
     ```
