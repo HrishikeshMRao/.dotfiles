@@ -40,10 +40,12 @@ These files make your linux experience memorable.
   
 - installed the required packages for the dotfiles to act on (non root user):
   ```bash
-  sudo apt install mpd i3-wm i3blocks tmux picom rofi ncmpcpp fzf ripgrep keychain expect xcape curl
+  sudo apt install mpd i3-wm i3blocks picom rofi ncmpcpp fzf ripgrep keychain expect xcape curl
   ```
 
   - Install neovim manually through releases this is necessary to run lazy
+  - Install tmux from releases aswell for nerd font icons
+    
   - TPM is required in this location
   ```bash
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
