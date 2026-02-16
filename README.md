@@ -40,7 +40,7 @@ These files make your linux experience memorable.
   
 - installed the required packages for the dotfiles to act on (non root user):
   ```bash
-  sudo apt install mpd i3-wm tmux picom rofi ncmpcpp fzf ripgrep keychain expect xcape curl
+  sudo apt install mpd i3-wm i3blocks tmux picom rofi ncmpcpp fzf ripgrep keychain expect xcape curl
   ```
 
   - Install neovim manually through releases this is necessary to run lazy
