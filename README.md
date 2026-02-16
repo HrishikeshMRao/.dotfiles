@@ -40,7 +40,13 @@ These files make your linux experience memorable.
   
 - installed the required packages for the dotfiles to act on (non root user):
   ```bash
-  sudo apt install neovim mpd i3-wm tmux picom rofi ncmpcpp fzf ripgrep keychain expect curl
+  sudo apt install mpd i3-wm tmux picom rofi ncmpcpp fzf ripgrep keychain expect xcape curl
+  ```
+
+  - Install neovim manually through releases this is necessary to run lazy
+  - TPM is required in this location
+  ```bash
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
   ```
 
   to install zoxide:
