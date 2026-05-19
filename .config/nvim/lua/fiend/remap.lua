@@ -55,10 +55,13 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r>=input('Find: ')<CR>\>/\=input('Re
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- Insert boilerplate code snippet with <leader>ee
-vim.keymap.set("n", "<leader>ee", "oif err != nil {<CR>}<Esc>Oreturn err<Esc>")
+-- vim.keymap.set("n", "<leader>ee", "oif err != nil {<CR>}<Esc>Oreturn err<Esc>")
 
 -- Edit Neovim configuration file with <leader>vpp
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/fiend/lazy_init.lua<CR>")
+
+-- Jump back in the jumplist (after LSP definition / any jump)
+vim.keymap.set("n", "<leader>lb", "<C-o>", { desc = "Jump back (previous location)" })
 
 -- Source the Neovim configuration file with <leader><leader>
 vim.keymap.set("n", "<leader><leader>", function()

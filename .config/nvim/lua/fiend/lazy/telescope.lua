@@ -1,17 +1,18 @@
 return {
   {
     "nvim-telescope/telescope.nvim",
-
-    tag = "0.1.5",
-
     dependencies = {
       "nvim-lua/plenary.nvim",
       "BurntSushi/ripgrep",
+      { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     },
 
     config = function()
       require("telescope").setup({
         defaults = {
+          preview = {
+            treesitter = false,
+          },
           mappings = {
             i = {
               ["<C-j>"] = require("telescope.actions").move_selection_next,
@@ -24,8 +25,6 @@ return {
           },
         },
       })
-      require("telescope.health").check()
-      -- Enable telescope fzf native, if installed
       pcall(require("telescope").load_extension, "fzf")
 
       -- See `:help telescope.builtin`
@@ -67,21 +66,9 @@ return {
   {
     "nvim-telescope/telescope-ui-select.nvim",
     config = function()
-      -- This is your opts table
-      -- This is your opts table
       require("telescope").setup({
         extensions = {
-          ["ui-select"] = {
-            require("telescope.themes").get_dropdown({}),
-          },
-        },
-      })
-      require("telescope").load_extension("ui-select")
-      require("telescope").setup({
-        extensions = {
-          ["ui-select"] = {
-            require("telescope.themes").get_dropdown({}),
-          },
+          ["ui-select"] = { require("telescope.themes").get_dropdown({}) },
         },
       })
       require("telescope").load_extension("ui-select")

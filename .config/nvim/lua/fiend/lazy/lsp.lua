@@ -23,7 +23,6 @@ return {
       require("mason-lspconfig").setup({})
     end,
   },
-  { "nvimdev/lspsaga.nvim" },
   {
     "paretje/nvim-man",
     config = function()
@@ -48,6 +47,10 @@ return {
     config = function()
       -- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
+      capabilities.textDocument.foldingRange = {
+        dynamicRegistration = false,
+        lineFoldingOnly = true,
+      }
 
       local lsps = {
         {
@@ -71,7 +74,16 @@ return {
         {
           "clangd",
           {
-            cmd = { "clangd", "--background-index", "--clang-tidy", "--log=verbose" },
+            cmd = {
+              "clangd",
+              "--background-index",
+              "--clang-tidy",
+              "--header-insertion=iwyu",
+              "--completion-style=detailed",
+              "--function-arg-placeholders=1",
+              "--fallback-style=llvm",
+              "--log=error",
+            },
             init_options = {
               fallbackFlags = { "-std=c++17" },
             },
@@ -114,6 +126,25 @@ return {
             vim.lsp.buf.declaration()
           end, opts)
           vim.keymap.set("n", "<leader>ld", function()
+            local origin_buf = vim.api.nvim_get_current_buf()
+            local origin_pos = vim.api.nvim_win_get_cursor(0)
+
+            local grp = vim.api.nvim_create_augroup("LspDefReturn", { clear = true })
+            vim.api.nvim_create_autocmd("BufEnter", {
+              group = grp,
+              once = true,
+              callback = function()
+                local def_buf = vim.api.nvim_get_current_buf()
+                vim.api.nvim_del_augroup_by_id(grp)
+                if def_buf == origin_buf then return end
+                vim.keymap.set("n", "q", function()
+                  vim.api.nvim_set_current_buf(origin_buf)
+                  vim.api.nvim_win_set_cursor(0, origin_pos)
+                  pcall(vim.keymap.del, "n", "q", { buffer = def_buf })
+                end, { buffer = def_buf, nowait = true, silent = true, desc = "Return to pre-definition location" })
+              end,
+            })
+
             vim.lsp.buf.definition()
           end, opts)
           vim.keymap.set("n", "K", function()

@@ -20,21 +20,5 @@ return {
     vim.keymap.set("n", "<leader>gP", ":Git pull<CR>", { desc = "Git pull" })
     vim.keymap.set("n", "<leader>gPr", ":Git pull --rebase<CR>", { desc = "Git pull with rebase" })
     vim.keymap.set("n", "<leader>gPo", ":Git pull origin<CR>", { desc = "Git pull from origin" })
-    -- Set up an autocmd group for Fugitive buffers
-    local fugitive = vim.api.nvim_create_augroup("fugitive", {})
-    local autocmd = vim.api.nvim_create_autocmd
-
-    autocmd("BufWinEnter", {
-      group = fugitive,
-      pattern = "*",
-      callback = function()
-        if vim.bo.ft ~= "fugitive" then
-          return
-        end
-
-        -- Optionally, you can set buffer-specific keybindings or settings here
-        -- For Fugitive buffers, additional configurations can be added if needed
-      end,
-    })
   end,
 }

@@ -67,10 +67,6 @@ return {
         -- Set to `false` to remove a keymap
         -- See :help oil-actions for a list of all available actions
         use_default_keymaps = false,
-        -- Using vim.keymap.set (recommended in Neovim >= 0.7)
-        vim.keymap.set("n", "<leader>-", function()
-          require("oil").open()
-        end, { desc = "Open Oil" }),
         keymaps = {
           ["g?"] = "actions.show_help",
           ["<CR>"] = "actions.select",
@@ -195,6 +191,9 @@ return {
           border = "rounded",
         },
       })
+      vim.keymap.set("n", "<leader>-", function()
+        require("oil").open()
+      end, { desc = "Open Oil" })
     end,
   },
 }
