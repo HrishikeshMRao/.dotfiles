@@ -13,7 +13,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font pango:Roboto Mono Medium for Powerline 9
-font pango:FiraMono Nerd Font Propo Regular 12
+font pango:Hack Nerd Font Mono Regular 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -273,7 +273,7 @@ bindsym $mod+t exec "flatpak run com.github.johnfactotum.Foliate"
 exec --no-startup-id firefox
 exec --no-startup-id keepassxc
 exec --no-startup-id harmonymusic
-exec --no-startup-id kitty
+exec --no-startup-id kitty --debug-font-fallback
 ##################################### CUSTOM STYLING ###############################################
 
 # set default as no border
