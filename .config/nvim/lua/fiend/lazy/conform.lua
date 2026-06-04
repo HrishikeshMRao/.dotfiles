@@ -16,6 +16,8 @@ return {
         lua = { "stylua" },
         python = { "isort", "black" },
         rust = { "rustfmt", lsp_format = "fallback" },
+        c = { "clang_format" },
+        cpp = { "clang_format" },
 
         xml = { "xmlformat" },
         json = { "jq" },
