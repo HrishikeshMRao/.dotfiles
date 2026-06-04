@@ -2,25 +2,22 @@ return {
   {
     "williamboman/mason.nvim",
     config = function()
-      require("mason").setup({
-        ensure_installed = {
-          "clang-format",
-          "lua_ls",
-          "pyright",
-          "clangd",
-          "bashls",
-          "marksman",
-          "markdownlint",
-          "markdown-oxide",
-          "prettierd",
-        },
-      })
+      require("mason").setup()
     end,
   },
   {
     "williamboman/mason-lspconfig.nvim",
     config = function()
-      require("mason-lspconfig").setup({})
+      require("mason-lspconfig").setup({
+        ensure_installed = {
+          "lua_ls",
+          "pyright",
+          "clangd",
+          "bashls",
+          "marksman",
+          "markdown_oxide",
+        },
+      })
     end,
   },
   {
@@ -100,10 +97,16 @@ return {
         end
       end
 
-      vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-        border = "rounded", -- Adds a rounded border to the hover window
-        max_width = 80, -- Sets the maximum width of the hover window
-        max_height = 20, -- Sets the maximum height of the hover window
+      vim.lsp.config("*", {
+        handlers = {
+          ["textDocument/hover"] = function(err, result, ctx, config)
+            return vim.lsp.handlers.hover(err, result, ctx, vim.tbl_extend("force", config or {}, {
+              border = "rounded",
+              max_width = 80,
+              max_height = 20,
+            }))
+          end,
+        },
       })
       -- Highlighting configuration for LSP Hover
       vim.cmd([[highlight LspHover ctermfg=LightGray guifg=#dcdcdc]])
